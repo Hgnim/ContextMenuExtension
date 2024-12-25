@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+	  <AssemblyVersion>1.0.1.1115</AssemblyVersion>
+	  <FileVersion>1.0.1.1115</FileVersion>
+	  <Version>1.0.1.20241115</Version>
+	  <Title>为右键菜单添加更多功能</Title>
+	  <Company>Hgnim</Company>
+	  <Product>ContextMenuExtension</Product>
+	  <Description>右键菜单扩展</Description>
+	  <Copyright>Copyright (C) 2024 Hgnim, All rights reserved.</Copyright>
+	  <AssemblyName>右键菜单扩展</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BatFiles\mklink-d.bat" />
+    <None Remove="BatFiles\mklink-dj-r.bat" />
+    <None Remove="BatFiles\mklink-h-r.bat" />
+    <None Remove="BatFiles\mklink-h.bat" />
+    <None Remove="BatFiles\mklink-j.bat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="BatFiles\mklink-d.bat" />
+    <EmbeddedResource Include="BatFiles\mklink-dj-r.bat" />
+    <EmbeddedResource Include="BatFiles\mklink-h-r.bat" />
+    <EmbeddedResource Include="BatFiles\mklink-h.bat" />
+    <EmbeddedResource Include="BatFiles\mklink-j.bat" />
+  </ItemGroup>
+
+
+
+</Project>
